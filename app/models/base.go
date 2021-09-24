@@ -24,7 +24,7 @@ var err error
 
 func init(){
 
-	url := os.Getenv("DATABESE_URL")
+	url := os.Getenv("DATABASE_URL")
 	connection,_ := pq.ParseURL(url)
 	connection += "sslmode=require"
 	Db,err = sql.Open(config.Config.SQLDriver,connection)

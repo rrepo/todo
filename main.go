@@ -5,7 +5,7 @@ import (
 	"heroku_todo/app/controllers"
 	"heroku_todo/app/models"
 	_ "heroku_todo/config"
-	"log"
+	_"log"
 	_ "log"
 	_ "os/user"
 )
@@ -15,17 +15,17 @@ func main() {
 	fmt.Println(models.Db)
 	controllers.StartMainServer()
 
-	user,_ := models.GetUserByEmail("test@gmail.com")
-	fmt.Println(user)
+	// user,_ := models.GetUserByEmail("test@gmail.com")
+	// fmt.Println(user)
 
-	session, err := user.CreateSession()
-	if err != nil {
-		log.Panicln()
-	}
-	fmt.Println(session)
+	// session, err := user.CreateSession()
+	// if err != nil {
+	// 	log.Panicln()
+	// }
+	// fmt.Println(session)
 
-	valid, _ := session.CheckSession()
-	fmt.Println(valid)
+	// valid, _ := session.CheckSession()
+	// fmt.Println(valid)
 	
 	// fmt.Println(config.Config.Port)
 	// fmt.Println(config.Config.SQLDriver)
