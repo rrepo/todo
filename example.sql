@@ -1,7 +1,7 @@
 drop table sessions;
 drop table users;
 drop table todos;
- 
+
 create table users (
   id         serial primary key,
   uuid       varchar(64) not null unique,
@@ -10,7 +10,7 @@ create table users (
   password   varchar(255) not null,
   created_at timestamp not null   
 );
- 
+
 create table sessions (
   id         serial primary key,
   uuid       varchar(64) not null unique,
@@ -18,7 +18,7 @@ create table sessions (
   user_id    integer references users(id),
   created_at timestamp not null   
 );
- 
+
 create table todos (
   id         serial primary key,
   content    text,
