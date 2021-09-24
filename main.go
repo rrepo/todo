@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	"todoapp/app/controllers"
-	"todoapp/app/models"
-	_ "todoapp/config"
+	"heroku_todo/app/controllers"
+	"heroku_todo/app/models"
+	_ "heroku_todo/config"
 	"log"
 	_ "log"
 	_ "os/user"

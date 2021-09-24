@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"todoapp/app/models"
+	"heroku_todo/app/models"
 	"log"
 	"net/http"
 )
