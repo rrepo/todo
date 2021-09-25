@@ -67,8 +67,6 @@ func StartMainServer() error {
 
 	http.HandleFunc("/favicon.ico",faviconHandler)
 	http.HandleFunc("/", top)
-
-
 	http.HandleFunc("/signup", signup)
 	http.HandleFunc("/login", login)
 	http.HandleFunc("/authenticate", authenticate)
