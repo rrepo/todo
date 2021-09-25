@@ -123,5 +123,5 @@ func todoDelete(w http.ResponseWriter, r *http.Request,id int){
 }
 
 func faviconHandler(w http.ResponseWriter, r *http.Request) {
-	http.ServeFile(w, r, "static/favicon.ico")
+	http.ServeFile(w, r, "../../static/favicon.ico")
 }
