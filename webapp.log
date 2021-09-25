@@ -20196,3 +20196,22 @@ created by net/http.(*Server).Serve
 2021/09/24 12:49:15 server.go:46: /todos/edit/1 [/todos/edit/1 edit 1]
 2021/09/24 12:49:18 server.go:46: /todos/update/1 [/todos/update/1 update 1]
 2021/09/24 12:49:18 route_main.go:88: update
+2021/09/25 23:07:32 server.go:35: pq: SSL is not enabled on the server
+2021/09/25 23:07:32 server.go:35: pq: SSL is not enabled on the server
+2021/09/25 23:07:33 server.go:35: pq: SSL is not enabled on the server
+2021/09/25 23:07:34 server.go:35: pq: SSL is not enabled on the server
+2021/09/25 23:07:34 server.go:35: pq: SSL is not enabled on the server
+2021/09/25 23:07:35 server.go:35: pq: SSL is not enabled on the server
+2021/09/25 23:07:35 server.go:35: pq: SSL is not enabled on the server
+2021/09/25 23:07:35 server.go:35: pq: SSL is not enabled on the server
+2021/09/25 23:07:35 server.go:35: pq: SSL is not enabled on the server
+2021/09/25 23:07:35 server.go:35: pq: SSL is not enabled on the server
+2021/09/25 23:07:35 server.go:35: pq: SSL is not enabled on the server
+2021/09/25 23:07:36 server.go:35: pq: SSL is not enabled on the server
+2021/09/25 23:07:36 server.go:35: pq: SSL is not enabled on the server
+2021/09/25 23:07:37 server.go:35: pq: SSL is not enabled on the server
+2021/09/25 23:07:42 server.go:35: pq: SSL is not enabled on the server
+2021/09/25 23:07:42 server.go:35: pq: SSL is not enabled on the server
+2021/09/25 23:07:42 server.go:35: pq: SSL is not enabled on the server
+2021/09/25 23:08:27 server.go:33: pq: SSL is not enabled on the server
+2021/09/25 23:08:28 server.go:33: pq: SSL is not enabled on the server
