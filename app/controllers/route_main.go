@@ -14,6 +14,7 @@ func top(w http.ResponseWriter, r *http.Request) {
 		http.Redirect(w,r,"/todos",302)
 	}
 }
+
 func faviconHandler(w http.ResponseWriter, r *http.Request) {
 	http.ServeFile(w, r, "favicon.ico")
 }
