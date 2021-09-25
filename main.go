@@ -16,6 +16,5 @@ func faviconHandler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	fmt.Println(models.Db)
-	http.HandleFunc("static/favicon.ico",faviconHandler)
 	controllers.StartMainServer()
 }
