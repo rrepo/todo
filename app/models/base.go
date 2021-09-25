@@ -16,11 +16,11 @@ var Db *sql.DB
 
 var err error
 
-// const(
-// 	tableNameUser = "users"
-// 	tableNameTodo = "todos"
-// 	tableNameSession = "sessions"
-// )
+const(
+	tableNameUser = "users"
+	tableNameTodo = "todos"
+	tableNameSession = "sessions"
+)
 
 func init(){
 
