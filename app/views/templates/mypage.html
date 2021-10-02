@@ -27,8 +27,8 @@
 <form role="form" action="/mypage/update/{{.ID}}" method="post">
     <div class="form-group">
         <input  class="form-control" type="password" name="current_password" id="content" placeholder="current password" rows="4"></input>
-        <input  class="form-control" name="password" id="password" placeholder="new password" rows="4" required=""></input>
-        <input  class="form-control" name="confirm" id="content" placeholder="new password again" rows="4" onclick="CheckPassword(this)" required=""></input>
+        <input  class="form-control" type="password" name="password" id="password" placeholder="new password" rows="4" required=""></input>
+        <input  class="form-control" type="password" name="confirm" id="content" placeholder="new password again" rows="4" onclick="CheckPassword(this)" required=""></input>
         <br/>
         <button class="btn btn-lg btn-primary pull-right" type="submit">update password</button>
     </div>
