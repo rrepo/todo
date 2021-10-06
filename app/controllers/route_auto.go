@@ -15,6 +15,7 @@ func signup(w http.ResponseWriter, r *http.Request) {
 			http.Redirect(w, r, "/todos", 302)
 		}
 	} else if r.Method == "POST" {
+		log.Println("sign")
 		err := r.ParseForm()
 		if err != nil {
 			log.Println(err)
