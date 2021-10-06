@@ -83,8 +83,8 @@ func todoSave(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-
 func todoEdit(w http.ResponseWriter, r *http.Request,id int){
+
 	sess,err := session(w,r)
 	if err != nil {
 		http.Redirect(w,r,"/login",302)
