@@ -9,7 +9,7 @@ create table users (
   email      varchar(255) not null unique,
   password   varchar(255) not null,
   created_at timestamp not null,
-    authentication bool default false
+  authentication boolean	default false
 );
 
 create table sessions (
