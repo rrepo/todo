@@ -192,7 +192,7 @@ func AuthSendEmail(email string,uuid string){
         "To: " + to + "\r\n" +
         "Subject: 件名 This is Auth Url\r\n" +
         "\r\n" +
-        "http://localhost:8080/auth-email/" + uuid +
+        "https://go-todoapp.herokuapp.com/auth-email/" + uuid +
     "")
 
     // func SendMail(addr string, a Auth, from string, to []string, msg []byte) error
