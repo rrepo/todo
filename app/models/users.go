@@ -77,7 +77,7 @@ func (u *User)UpdateUser() (err error){
 
 func (u *User)UpdateAuth() (err error){
 	cmd := `update users set authentication = true
-	where id = ?`
+	where id = $1`
 	_, err = Db.Exec(cmd,u.ID)
 	
 	if err != nil {
