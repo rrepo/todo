@@ -192,6 +192,7 @@ func AuthUrl(w http.ResponseWriter, r *http.Request) {
 
 
 func AuthEmail(w http.ResponseWriter, r *http.Request) {
+	log.Println("authemail")
 	sess,err := session(w,r)
 	q := r.URL.Path[12:]
 	u,_ := models.GetUser(sess.UserID)
