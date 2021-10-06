@@ -8,6 +8,7 @@ import (
 
 func signup(w http.ResponseWriter, r *http.Request) {
 	if r.Method == "GET" {
+		log.Println("sign")
 		_, err := session(w, r)
 		if err != nil {
 			generateHTML(w, nil, "layout", "public_navbar", "signup")
