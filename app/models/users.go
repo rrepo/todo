@@ -118,7 +118,7 @@ func (u *User) CreateSession()(session Session,err error){
 		user_id,
 		created_at) values($1,$2,$3,$4)`
 
-	_, err = Db.Exec(cmd1 , createUUID(),u.Email,u.ID,time.Now(),u.Authentication)
+	_, err = Db.Exec(cmd1 , createUUID(),u.Email,u.ID,time.Now())
 	if err != nil {
 		log.Println(err)
 	}
