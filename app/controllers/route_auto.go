@@ -9,8 +9,6 @@ import (
 
 func signup(w http.ResponseWriter, r *http.Request) {
 	if r.Method == "GET" {
-		log.Println("sign")
-		fmt.Println("singdd")
 		_, err := session(w, r)
 		if err != nil {
 			generateHTML(w, nil, "layout", "public_navbar", "signup")
@@ -18,7 +16,6 @@ func signup(w http.ResponseWriter, r *http.Request) {
 			http.Redirect(w, r, "/todos", 302)
 		}
 	} else if r.Method == "POST" {
-		log.Println("sign")
 		fmt.Println("singdd")
 		err := r.ParseForm()
 		if err != nil {
