@@ -1,0 +1,58 @@
+{{define "content"}}
+
+<h1>mypage</h1>
+
+<p>
+    ID   : {{.ID}}<br>
+    Name : {{.Name}}<br>
+    Email : {{.Email}}<br>
+    Email authentication : {{.Authentication}}
+</p>
+
+<h2>Change profile</h2>
+<form role="form" action="/mypage/update/{{.ID}}" method="post">
+    <div class="form-group">
+      <input  class="form-control" name="name" id="content" placeholder="new name" rows="4"></input><br>
+      <button class="btn btn-lg btn-primary pull-right" type="submit">update name</button>
+    </div>
+</form>
+
+<form role="form" action="/mypage/update/{{.ID}}" method="post">
+    <div class="form-group">
+      <input  class="form-control" type="email" name="email" id="content" placeholder="new email" rows="4"></input>
+      <br/>
+      <button class="btn btn-lg btn-primary pull-right" type="submit">update email</button>
+    </div>
+</form>
+
+<form role="form" action="/mypage/update/{{.ID}}" method="post">
+    <div class="form-group">
+        <input  class="form-control" type="password" name="current_password" id="content" placeholder="current password" rows="4"></input>
+        <input  class="form-control" name="password" id="password" placeholder="new password" rows="4" required=""></input>
+        <input  class="form-control" name="confirm" id="content" placeholder="new password again" rows="4" onclick="CheckPassword(this)" required=""></input>
+        <br/>
+        <button class="btn btn-lg btn-primary pull-right" type="submit">update password</button>
+    </div>
+    
+</form>
+
+<a href="/auth-url" class="btn btn-lg btn-primary pull-right">Send authentication email</a>
+
+<p>[<a href="/todos/new">Create</a>]</p>
+<hr>
+
+<script>
+    function CheckPassword(confirm){
+        // 入力値取得
+        var input1 = password.value;
+        var input2 = confirm.value;
+        // パスワード比較
+        if(input1 != input2){
+            confirm.setCustomValidity("Passwords do not match");
+        }else{
+            confirm.setCustomValidity('');
+        }
+    }
+</script>
+
+{{end}}
