@@ -16,7 +16,7 @@ UserName : {{.Name}}
 
 {{ range .Todos}}
 
-<div>{{ .Content }}</div>
+<div><p style="white-space: pre">{{ .Content }}</p></div>
 <p>[<a href="/todos/edit/{{.ID}}">Edit</a>]</p>
 <p>[<a href="/todos/delete/{{.ID}}">Delete</a>]</p>
 <hr>
