@@ -1,24 +1,24 @@
 {{define "content"}}
-UserName : {{.Name}}
-<h1>TodoApp</h1>
-
+<p>UserName : {{.Name}}</p>
 <!-- <p>[<a href="/todos/new">Create</a>]</p> -->
 <!-- <hr> -->
 <form role="form" action="/todos/save" method="post">
     <!-- <div class="lead">TodosCreate</div> -->
     <div class="form-group">
-      <textarea class="form-control" name="content" id="content" placeholder="Add Todo" rows="4"></textarea>
+      <textarea class="form-control contex" name="content" id="content" placeholder="Add Todo" rows="4" 
+      style="background-color:rgba(255, 255, 255,0.3); color: #fff;"></textarea>
       <br/>
       <br/>
-      <button class="btn btn-lg btn-primary pull-right" type="submit">create</button>
+      <button class="btn btn-lg  pull-right btn-flat-border" type="submit">create</button>
     </div>
 </form>
 
 {{ range .Todos}}
 
+
 <div><p style="white-space: pre">{{ .Content }}</p></div>
-<p>[<a href="/todos/edit/{{.ID}}">Edit</a>]</p>
-<p>[<a href="/todos/delete/{{.ID}}">Delete</a>]</p>
+<p><a href="/todos/edit/{{.ID}}" class="btn-flat-border" >Edit</a></p>
+<p><a href="/todos/delete/{{.ID}}"class="btn-flat-border">Delete</a></p>
 <hr>
 
 {{end}}

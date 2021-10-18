@@ -7,15 +7,21 @@
     <title>TodoApp</title>
     <link rel="stylesheet" href="/static/css/bootstrap.min.css">
     <link rel="stylesheet" href="/static/css/form.css">
+    <link rel="stylesheet" href="/static/css/index.css">
 </head>
 <body>
-    {{ template "navbar" }}
-    <div class="container text-center">
-        {{template "content" . }}
-
-        <p>favicon by Renée French</p>
+    <div class="bg-image">
+        <div class="clear">
+            <div class="clea">
+                {{ template "navbar" }}
+                <div class="container text-center test">
+                    <!-- <p>layout</p> -->
+                    {{template "content" . }}
+                    <p>favicon by Renée French</p>
+                </div>
+            </div>
+        </div>
     </div>
-    
 </body>
 <script src="/static/js/jquery-3.5.1.min.js"></script>
 <script src="/static/js/bootstrap.bundle.min.js"></script>

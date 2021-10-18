@@ -1,0 +1,70 @@
+.bg-image {
+    background: url(
+      https://i.imgur.com/sA2b3n9.png) no-repeat center;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow: auto;
+  }
+.clea{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  color: #fff;
+}
+
+.text{
+  overflow-wrap: break-word;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 100px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+
+a{
+  /* color:rgb(97, 242, 255); */
+  color: #fff;
+}
+textarea{
+  background-color:rgba(255, 255, 255,0.3);
+  font-family : inherit;
+  font-size   : 100%;
+}
+
+.navs{
+  font-size: 20px;
+  color: #fff;
+}
+.nav{
+  display: inline-block;
+  /* padding: 0.3em 1em; */
+  text-decoration: none;
+  color: #fff;
+  /* border: solid 2px #fff; */
+  border-radius: 3px;
+  transition: .4s;
+}
+.nav:hover{
+  color: #fff;
+}
+
+.btn-flat-border {
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #67c5ff;
+  border: solid 2px #67c5ff;
+  border-radius: 3px;
+  transition: .4s;
+}
+
+.btn-flat-border:hover {
+  background: #67c5ff;
+  color: white;
+}

@@ -1,6 +1,7 @@
 package controllers
 
 import (
+	"html/template"
 	"log"
 	"net/http"
 	"heroku_todo/app/models"
@@ -9,7 +10,14 @@ import (
 func top(w http.ResponseWriter, r *http.Request) {
 	_,err := session(w,r)
 	if err != nil {
-		generateHTML(w, "Hello", "layout", "public_navbar", "top")
+		// generateHTML(w, "Hello", "layout", "public_navbar", "top")
+		t, err := template.ParseFiles("app/views/templates/sample.html")
+		if err != nil {
+			panic(err.Error())
+		}
+		if err := t.Execute(w, nil); err != nil {
+			panic(err.Error())
+		}
 	}else{
 		http.Redirect(w,r,"/todos",302)
 	}
